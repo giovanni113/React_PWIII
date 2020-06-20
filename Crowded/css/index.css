@@ -1,0 +1,33 @@
+/*Menu*/
+
+.barra_de_navegacao {
+    background-color: rgb(255, 8, 8);
+    width: 100%;
+    height: 40pt;
+    align-content: center;
+}
+
+.lista_do_menu {
+    list-style-type: none;
+}
+
+.itens_do_menu {
+    float: left;
+    display: inline-block;
+}
+
+.crowded_image {
+    width: 35pt;
+    height: 35pt;
+}
+
+.menu_input_bar {
+    border-width: 1pt;
+    border-color: rgb(0, 0, 0);
+    border-radius: 20pt;
+    width: 35%;
+    height: 35pt;
+    align-self: center;
+    background-color: #98B7B8;
+}
+
