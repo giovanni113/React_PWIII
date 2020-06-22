@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/index.css" />
+    <link rel="stylesheet" href="../src/reset.css" />
+    <title>Crowdy</title>
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type ="text/babel">
+
+        class Perfil extends React.Component {
+                    render(){
+                        return(
+                            <div>
+                                <header>
+                                    <div className="Background">
+                                        <p className="Name">Username</p>
+                                        <p className="Nick">@Nickname</p>
+                                    </div>
+                                    <div>
+                                        <img src="assets/no_Profile_Image.jpg" alt="No_Image" className="User" /> 
+                                        <div className="FollowButton">
+                                            <p className="FollowText"> Seguir </p>
+                                        </div>
+                                        <div className="Info">
+                                            <a href="UserForm.html">
+                                            <button>
+                                                Saiba Mais
+                                            </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </header>
+                            </div>
+                        )
+                    }
+                }
+
+        ReactDOM.render(
+            <Perfil />,
+            document.getElementById("header")
+        )
+
+</script>
+</body>
+</html>

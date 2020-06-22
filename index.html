@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/index.css" />
+    <link rel="stylesheet" href="../src/reset.css" />
+    <title>Crowdy</title>
+</head>
+<body>
+   
+    <div id="nav"></div>
+    <div id="header"></div>
+    <div id="section"></div>
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type ="text/babel">
+
+        class Cabeçalho extends React.Component {
+            render(){
+                return(
+                    <div>
+                        <nav className="barra_de_navegacao">
+                            <img src="assets/crowd_light.png" alt="No_Image" className="crowded_image" /> 
+                            <input type="text" value="&nbsp;&nbsp;" className="menu_input_bar" /> 
+                            <img src="assets/Globo_News.png" alt="No_Image" className="Globo" /> 
+                        </nav>
+                    </div>
+                )
+            }
+        }
+
+        class Perfil extends React.Component {
+            render(){
+                return(
+                    <div>
+                        <header>
+                            <div className="Background">
+                                <p className="Name">Username</p>
+                                <p className="Nick">@Nickname</p>
+                            </div>
+                                <img src="assets/no_Profile_Image.jpg" alt="No_Image" className="User" /> 
+                                <div className="FollowButton">
+                                    <p className="FollowText"> Seguir </p>
+                                </div>
+                                <div className="Info">
+                                    <a href="UserForm.html">
+                                    <button>
+                                        Saiba Mais
+                                    </button>
+                                    </a>
+                                </div>
+                        </header>
+                    </div>
+                )
+            }
+        }
+
+        class Conteúdo extends React.Component {
+            render(){
+                return(
+                    <div>
+                        <section>
+                            <div className="Comment">
+
+                            </div>
+                        </section>
+                    </div>
+                )
+            }
+        }
+
+
+
+        ReactDOM.render(
+            <Cabeçalho />,
+            document.getElementById("nav")
+        )
+
+        ReactDOM.render(
+            <Perfil />,
+            document.getElementById("header")
+        )
+
+        ReactDOM.render(
+            <Conteúdo />,
+            document.getElementById("section")
+        )
+        
+    
+    
+</script>
+</body>
+</html>
